@@ -23,7 +23,7 @@ class _SplashState extends State<SplashScreen> {
     body: Center(child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
       const Text('🏢', style: TextStyle(fontSize: 72)),
       const SizedBox(height: 18),
-      const Text('DairyGo Admin', style: TextStyle(fontSize: 26, fontWeight: FontWeight.w700, color: Colors.white)),
+      const Text('Aavinam Admin', style: TextStyle(fontSize: 26, fontWeight: FontWeight.w700, color: Colors.white)),
       const SizedBox(height: 6),
       const Text('Management Panel', style: TextStyle(fontSize: 13, color: Color(0xFF90CAF9))),
       const SizedBox(height: 48),
@@ -76,7 +76,7 @@ class _LoginState extends State<LoginScreen> {
       const Expanded(flex: 2, child: Center(child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
         Text('🏢', style: TextStyle(fontSize: 60)),
         SizedBox(height: 12),
-        Text('DairyGo Admin', style: TextStyle(fontSize: 22, fontWeight: FontWeight.w700, color: Colors.white)),
+        Text('Aavinam Admin', style: TextStyle(fontSize: 22, fontWeight: FontWeight.w700, color: Colors.white)),
         Text('Management Panel', style: TextStyle(fontSize: 13, color: Color(0xFF90CAF9))),
       ]))),
       Expanded(flex: 3, child: Container(

@@ -14,7 +14,7 @@ class DairyGoAdminApp extends StatelessWidget {
   const DairyGoAdminApp({super.key});
   @override
   Widget build(BuildContext context) => MaterialApp(
-    title: 'DairyGo Admin',
+    title: 'Aavinam Admin',
     debugShowCheckedModeBanner: false,
     theme: ThemeData(
       useMaterial3: true,

@@ -25,7 +25,7 @@ class _DashboardState extends State<DashboardScreen> {
   Widget build(BuildContext context) => Scaffold(
     backgroundColor: kBg,
     body: Column(children: [
-      aHeader('Admin Dashboard', 'DairyGo Madurai'),
+      aHeader('Admin Dashboard', 'Aavinam Madurai'),
       if (_loading) const Expanded(child: Center(child: CircularProgressIndicator(color: kPrimary)))
       else Expanded(child: RefreshIndicator(onRefresh: _load, color: kPrimary,
         child: ListView(padding: const EdgeInsets.all(16), children: [

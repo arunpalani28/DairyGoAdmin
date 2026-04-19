@@ -28,7 +28,7 @@ class _ReportsScreenState extends State<ReportsScreen> {
   Widget build(BuildContext context) => Scaffold(
     backgroundColor: kBg,
     body: Column(children: [
-      aHeader('Reports', 'DairyGo Madurai'),
+      aHeader('Reports', 'Aavinam Madurai'),
       if (_loading)
         const Expanded(child: Center(child: CircularProgressIndicator(color: kPrimary)))
       else

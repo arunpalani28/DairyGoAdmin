@@ -1,5 +1,5 @@
 name: dairygo_admin
-description: DairyGo Madurai Flutter App
+description: Aavinam Madurai Flutter App
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -11,8 +11,14 @@ dependencies:
     sdk: flutter
   http: ^1.2.0
   shared_preferences: ^2.2.3
-  
   google_fonts: ^6.1.0
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assests/icon/app_icon.jpg"
 
 flutter:
   uses-material-design: true
