@@ -21,11 +21,14 @@ class _SplashState extends State<SplashScreen> {
   @override Widget build(BuildContext context) => Scaffold(
     backgroundColor: kPrimary,
     body: Center(child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-      const Text('🏢', style: TextStyle(fontSize: 72)),
-      const SizedBox(height: 18),
-      const Text('Aavinam Admin', style: TextStyle(fontSize: 26, fontWeight: FontWeight.w700, color: Colors.white)),
-      const SizedBox(height: 6),
-      const Text('Management Panel', style: TextStyle(fontSize: 13, color: Color(0xFF90CAF9))),
+      
+Image.asset(
+  'assets/app_logo.png',
+  errorBuilder: (context, error, stackTrace) {
+    print("Asset Error: $error"); // Look at your terminal/debug console
+    return Text("Could not find image: $error");
+  },
+),
       const SizedBox(height: 48),
       const CircularProgressIndicator(color: Colors.white, strokeWidth: 2),
     ])),
@@ -74,9 +77,15 @@ class _LoginState extends State<LoginScreen> {
     backgroundColor: kPrimary,
     body: SafeArea(child: Column(children: [
       const Expanded(flex: 2, child: Center(child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-        Text('🏢', style: TextStyle(fontSize: 60)),
-        SizedBox(height: 12),
-        Text('Aavinam Admin', style: TextStyle(fontSize: 22, fontWeight: FontWeight.w700, color: Colors.white)),
+        Image.asset(
+             'assets/app_logo.png',
+              width: 220,
+              height: 220,
+              fit: BoxFit.contain,
+            ),
+        // Text('🏢', style: TextStyle(fontSize: 60)),
+        // SizedBox(height: 12),
+        // Text('Aavinam Admin', style: TextStyle(fontSize: 22, fontWeight: FontWeight.w700, color: Colors.white)),
         Text('Management Panel', style: TextStyle(fontSize: 13, color: Color(0xFF90CAF9))),
       ]))),
       Expanded(flex: 3, child: Container(
