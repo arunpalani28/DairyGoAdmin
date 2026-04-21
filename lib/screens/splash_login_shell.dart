@@ -76,7 +76,7 @@ class _LoginState extends State<LoginScreen> {
   @override Widget build(BuildContext context) => Scaffold(
     backgroundColor: kPrimary,
     body: SafeArea(child: Column(children: [
-      const Expanded(flex: 2, child: Center(child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+      Expanded(flex: 2, child: Center(child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
         Image.asset(
              'assets/app_logo.png',
               width: 220,
@@ -86,7 +86,7 @@ class _LoginState extends State<LoginScreen> {
         // Text('🏢', style: TextStyle(fontSize: 60)),
         // SizedBox(height: 12),
         // Text('Aavinam Admin', style: TextStyle(fontSize: 22, fontWeight: FontWeight.w700, color: Colors.white)),
-        Text('Management Panel', style: TextStyle(fontSize: 13, color: Color(0xFF90CAF9))),
+        const Text('Management Panel', style: TextStyle(fontSize: 13, color: Color(0xFF90CAF9))),
       ]))),
       Expanded(flex: 3, child: Container(
         decoration: const BoxDecoration(color: kBg, borderRadius: BorderRadius.vertical(top: Radius.circular(28))),
